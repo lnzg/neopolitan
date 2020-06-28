@@ -1,0 +1,24 @@
+div.container.beige {
+  background-color: #f9f9ed;
+  height: 275px;
+  padding-top: 80px;
+  width: 550px;
+  text-align: center;
+  position: relative;
+  z-index: -2;
+  bottom: 120px;
+  border-radius: 10px;
+}
+
+.small-icon {
+  width: 60px;
+  position: relative;
+  bottom: 10px;
+  padding-top: 18px;
+  padding-bottom: 18px;
+}
+
+.three-day {
+  padding-top: 7px;
+  margin-left: -15px;
+}

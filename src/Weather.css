@@ -1,0 +1,91 @@
+/* backgrounds  */
+
+.background {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.pink-background {
+  background-color: #f8dce6;
+  height: 220px;
+  width: 550px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  margin: 10px auto 0px auto;
+  position: relative;
+}
+.wave {
+  width: 550px;
+  transform: scaleX(-1);
+  position: relative;
+  z-index: -1;
+}
+
+/* right content */
+
+h1 {
+  text-transform: uppercase;
+  padding-top: 20px;
+  font-size: 3.1rem !important;
+  margin-bottom: -0.3rem !important;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.right-panel {
+  text-align: left;
+}
+
+.quote {
+  font-size: 1rem;
+  letter-spacing: 1px;
+}
+
+/* 
+temperature */
+
+.temp-line {
+  position: relative;
+  bottom: 30px;
+}
+
+.temp {
+  font-size: 5rem;
+  position: relative;
+}
+
+.metric {
+  position: relative;
+  bottom: 40px;
+  left: 3px;
+  font-weight: 600 !important;
+}
+
+.weather-icon {
+  width: 90px;
+  position: relative;
+  bottom: 20px;
+  left: 20px;
+}
+
+/* right panel weather description */
+
+.weather-description {
+  position: relative;
+  bottom: 55px;
+  line-height: 1.2rem;
+  letter-spacing: 0.03rem;
+}
+
+/* left panel */
+
+.left-panel {
+  padding-top: 20px;
+  text-align: right;
+  line-height: 1.3rem;
+  letter-spacing: 0.03rem;
+  margin-left: 20px;
+}
