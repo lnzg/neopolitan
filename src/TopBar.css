@@ -25,9 +25,6 @@ div.row {
   color: #82655b !important;
 }
 
-.search {
-  color: #82655b !important;
-}
 .form-control::-webkit-input-placeholder {
   color: #82655b !important;
 }
@@ -42,12 +39,6 @@ div.row {
   margin-left: 45px;
 }
 
-button {
-  width: 20px;
-  position: relative;
-  z-index: 2;
-}
-
 button.geolocation {
   color: #f8dce6;
   background: none;
@@ -55,6 +46,9 @@ button.geolocation {
   font-size: 2.1rem;
   top: 46px;
   left: 4px;
+  width: 20px;
+  position: relative;
+  z-index: 2;
 }
 
 button.geolocation:hover {
