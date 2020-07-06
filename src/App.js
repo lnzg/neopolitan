@@ -6,11 +6,27 @@ import Forecast from "./Forecast";
 function App() {
   return (
     <div className="App">
-      <Weather />
+      <Weather defaultCity="New York" />
       <Forecast />
       <footer>
         <p>neapolitan weather app</p>
-        <p>open source • coded by lin</p>
+        <p>
+          <a
+            href="https://github.com/lnzg/neopolitan"
+            target="_blank"
+            className="open-source"
+          >
+            open source
+          </a>{" "}
+          • coded by{" "}
+          <a
+            href="https://www.instagram.com/linlearnscode"
+            target="_blank"
+            className="open-source"
+          >
+            lin
+          </a>
+        </p>
       </footer>
     </div>
   );

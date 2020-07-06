@@ -16,3 +16,15 @@ footer p {
   font-weight: 400;
   margin: 0 0 -2px 0;
 }
+
+.open-source {
+  color: #ffccdc;
+  padding: 2px 5px;
+  transition: all 450ms ease-in-out;
+}
+
+.open-source:hover {
+  text-decoration: none;
+  background: #82655b;
+  color: #f9f9ed;
+}

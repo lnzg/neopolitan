@@ -21,7 +21,6 @@ div.row {
 .form-control {
   margin-top: 50px;
   margin-left: 60px;
-  padding-bottom: 0px;
   background-color: #f8dce6 !important;
   border: none !important;
   color: #82655b !important;
@@ -44,19 +43,24 @@ div.row {
 button.geolocation {
   color: #f8dce6;
   background: none;
-  border: none;
+  border: none !important;
   font-size: 2.1rem;
   top: 46px;
   left: 4px;
   width: 20px;
   position: relative;
   z-index: 2;
+  box-shadow: none;
 }
 
-button.geolocation:hover {
+button.geolocation:hover,
+button.geolocation:focus,
+button.geolocation:active {
   color: #82655b;
   background: none;
-  border: none;
+  outline: none !important;
+  border: none !important;
+  box-shadow: none !important;
 }
 
 /* backgrounds  */
@@ -82,12 +86,12 @@ button.geolocation:hover {
   z-index: -1;
 }
 
-/* right content */
+/* left content */
 
 h1 {
   text-transform: uppercase;
   padding-top: 20px;
-  font-size: 3.1rem !important;
+  font-size: 2.4rem !important;
   margin-bottom: -0.3rem !important;
 }
 
@@ -125,14 +129,13 @@ temperature */
   font-weight: 600 !important;
 }
 
-.weather-icon {
-  width: 90px;
+canvas {
   position: relative;
-  bottom: 20px;
-  left: 20px;
+  top: 5px;
+  left: 30px;
 }
 
-/* right panel weather description */
+/* left panel weather description */
 
 .weather-description {
   position: relative;
@@ -141,12 +144,15 @@ temperature */
   letter-spacing: 0.03rem;
 }
 
-/* left panel */
+/* right panel */
 
 .left-panel {
+  text-transform: lowercase;
   padding-top: 20px;
   text-align: right;
   line-height: 1.3rem;
   letter-spacing: 0.03rem;
-  margin-left: 20px;
+  padding-right: 20px;
+  top: 1px;
+  right: 25px;
 }
