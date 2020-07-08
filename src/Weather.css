@@ -72,7 +72,7 @@ button.geolocation:active {
 
 .pink-background {
   background-color: #f8dce6;
-  height: 220px;
+  height: 228px;
   width: 550px;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
@@ -149,8 +149,8 @@ canvas {
 
 .weather-description {
   position: relative;
-  bottom: 55px;
-  line-height: 1.2rem;
+  bottom: 53px;
+  line-height: 1.3rem;
   letter-spacing: 0.03rem;
 }
 
