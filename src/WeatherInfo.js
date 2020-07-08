@@ -1,5 +1,6 @@
 import React from "react";
 import WeatherIcon from "./WeatherIcon.js";
+import WeatherTemperature from "./WeatherTemperature.js";
 
 export default function WeatherInfo(props) {
   return (
@@ -7,12 +8,11 @@ export default function WeatherInfo(props) {
       <div className="pink-background">
         <div className="container all-weather">
           <div className="row">
-            <div className="col-10 right-panel">
+            <div className="col-9 left-panel">
               <h1>{props.data.city}</h1>
               <p className="quote">all weather is ice cream weather</p>
               <div className="temp-line">
-                <span className="temp">{props.data.temp}°</span>{" "}
-                <span className="metric">C | F</span>{" "}
+                <WeatherTemperature farn={props.data.temp} />
                 <WeatherIcon
                   className="weather-icon"
                   code={props.data.icon}
@@ -25,7 +25,7 @@ export default function WeatherInfo(props) {
                 <li>humidity: {props.data.humidity}%</li>
               </ul>
             </div>
-            <div className="col-2 left-panel">
+            <div className="col-3 right-panel">
               <ul>
                 <li>{props.data.day}</li>
                 <li>{props.data.time}</li>

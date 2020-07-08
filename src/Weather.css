@@ -100,7 +100,7 @@ ul {
   padding: 0;
 }
 
-.right-panel {
+.left-panel {
   text-align: left;
 }
 
@@ -129,6 +129,16 @@ temperature */
   font-weight: 600 !important;
 }
 
+.metric-link {
+  color: #f9f9ed;
+  opacity: 0.9;
+}
+
+.metric-link:hover {
+  color: #82655b;
+  text-decoration: none;
+}
+
 canvas {
   position: relative;
   top: 5px;
@@ -146,13 +156,12 @@ canvas {
 
 /* right panel */
 
-.left-panel {
+.right-panel {
   text-transform: lowercase;
   padding-top: 20px;
   text-align: right;
   line-height: 1.3rem;
   letter-spacing: 0.03rem;
-  padding-right: 20px;
   top: 1px;
   right: 25px;
 }

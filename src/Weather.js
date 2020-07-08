@@ -70,6 +70,18 @@ export default function Weather(props) {
 
   // end Search for City
 
+  function geolocation(position) {
+    navigator.geolocation.getCurrentPosition(accessPosition);
+  }
+
+  function accessPosition(position) {
+    let lat = position.coords.latitude;
+    let lon = position.coords.longitude;
+    let apiKey = "0577bd96999db21b7c2f3eef1b033562";
+    let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=imperial&appid=${apiKey}`;
+    axios.get(apiUrl).then(showCity);
+  }
+
   if (weatherData.ready) {
     return (
       <div>
@@ -93,7 +105,10 @@ export default function Weather(props) {
               </div>
               <div className="col-2">
                 <button className="geolocation">
-                  <FontAwesomeIcon icon={faMapMarkerAlt} />
+                  <FontAwesomeIcon
+                    icon={faMapMarkerAlt}
+                    onClick={geolocation}
+                  />
                 </button>
               </div>
             </div>
