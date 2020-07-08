@@ -1,13 +1,11 @@
 import React from "react";
 import "./App.css";
 import Weather from "./Weather";
-import Forecast from "./Forecast";
 
 function App() {
   return (
     <div className="App">
       <Weather defaultCity="New York" />
-      <Forecast />
       <footer>
         <p>neapolitan weather app</p>
         <p>

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./Weather.css";
 import WeatherInfo from "./WeatherInfo";
+import Forecast from "./Forecast";
 import icon from "./icon.png";
 import { faMapMarkerAlt, faSearch } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -29,6 +30,7 @@ export default function Weather(props) {
   if (hour < 10) {
     hour = `0${hour}`;
   }
+
   let minutes = now.getMinutes();
   if (minutes < 10) {
     minutes = `0${minutes}`;
@@ -70,6 +72,7 @@ export default function Weather(props) {
 
   // end Search for City
 
+  // geolocation
   function geolocation(position) {
     navigator.geolocation.getCurrentPosition(accessPosition);
   }
@@ -81,6 +84,7 @@ export default function Weather(props) {
     let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=imperial&appid=${apiKey}`;
     axios.get(apiUrl).then(showCity);
   }
+  // end geolocation
 
   if (weatherData.ready) {
     return (
@@ -115,6 +119,7 @@ export default function Weather(props) {
           </form>
         </div>
         <WeatherInfo data={weatherData} />
+        <Forecast city={weatherData.city} />
       </div>
     );
   } else {

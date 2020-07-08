@@ -1,3 +1,5 @@
+/* forecast */
+
 div.container.beige {
   background-color: #f9f9ed;
   height: 275px;
@@ -10,15 +12,18 @@ div.container.beige {
   border-radius: 10px;
 }
 
-.small-icon {
-  width: 60px;
-  position: relative;
-  bottom: 10px;
-  padding-top: 18px;
-  padding-bottom: 18px;
-}
-
 .three-day {
   padding-top: 7px;
   margin-left: -15px;
+}
+
+.beige canvas {
+  display: block;
+  padding: 10px;
+  margin-bottom: 18px !important;
+  margin-left: 5px !important;
+}
+
+.day {
+  text-transform: lowercase;
 }
