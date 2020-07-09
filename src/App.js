@@ -22,6 +22,7 @@ function App() {
             href="https://www.instagram.com/linlearnscode"
             target="_blank"
             className="open-source"
+            rel="noopener noreferrer"
           >
             lin
           </a>
