@@ -26,8 +26,6 @@ export default function Forecast(props) {
     "Saturday",
   ];
 
-  let currentDay = day[now.getDay()];
-
   let dayOneValue = now.getDay() + 1;
   if (dayOneValue === 8) {
     dayOneValue = "Monday";

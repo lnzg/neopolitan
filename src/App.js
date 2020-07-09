@@ -13,6 +13,7 @@ function App() {
             href="https://github.com/lnzg/neopolitan"
             target="_blank"
             className="open-source"
+            rel="noopener noreferrer"
           >
             open source
           </a>{" "}

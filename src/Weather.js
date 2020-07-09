@@ -3,7 +3,7 @@ import "./Weather.css";
 import WeatherInfo from "./WeatherInfo";
 import Forecast from "./Forecast";
 import icon from "./icon.png";
-import { faMapMarkerAlt, faSearch } from "@fortawesome/free-solid-svg-icons";
+import { faMapMarkerAlt } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import axios from "axios";
